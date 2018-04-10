@@ -6,8 +6,8 @@
 
 生成效果：
 
-![result](/images/demo.png)
+![result](demo/demo.png)
 
 标签样式：
 
-![label](/images/label.png)
+![label](demo/label.png)
