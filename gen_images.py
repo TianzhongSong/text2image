@@ -24,7 +24,7 @@ def genearte_images(total_number=1000, continue_gen=False, save_path='results/')
     print(label_index)
     txt_mode = 'w' if not continue_gen else 'a'
 
-    image_counter = 1000000
+    image_counter = 1000000 if not continue_gen else 1000000 + len(os.listdir(save_path))
     with open('labels.txt', txt_mode) as f:
         while total_number > 0:
             label_line = str(image_counter) + '.jpg'
