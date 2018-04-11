@@ -17,7 +17,7 @@ def genearte_images(total_number=1000, continue_gen=False, save_path='results/')
         os.mkdir(save_path)
     pygame.init()
     font = pygame.font.SysFont('SimHei', 31)
-    f = open('char_std_5990.txt', 'r', encoding='gbk', errors='ignore')
+    f = open('char_std_5990.txt', 'r', encoding='gb18030')
     label_txt = f.readlines()
     f.close()
     label_index = [label.strip() for label in label_txt]
